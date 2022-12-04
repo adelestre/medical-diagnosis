@@ -1,4 +1,5 @@
 import React from 'react'
+import db from '../res/ex.json'
 
 function Form() {
 	return (
@@ -30,6 +31,11 @@ function Form() {
 					/>
 				</div>
 			</form>
+			<div>
+				{db.symptomes.map((item, index) => (
+					<div key={index}>{item}</div>
+				))}
+			</div>
 		</div>
 	)
 }

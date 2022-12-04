@@ -1,16 +1,16 @@
 {
-	"symptomes": {
-		"fievre": {
+	"symptomes": [
+		{
 			"nom": "Fièvre",
 			"id": "fievre"
 		},
-		"toux": {
+		{
 			"nom": "Toux",
 			"id": "toux"
 		}
-	},
-	"diagnostics": {
-		"grippe": {
+	],
+	"diagnostics": [
+		{
 			"nom": "Grippe",
 			"id": "grippe",
 			"symptomes": ["fievre", "toux"],
@@ -20,5 +20,5 @@
 				"Appeler la famille"
 			]
 		}
-	}
+	]
 }
