@@ -26,7 +26,7 @@
 	],
 	"rules": [
 		{
-			"name": "grippe",
+			"diagnostic": "grippe",
 			"symptoms": ["fievre", "toux"]
 		}
 	]
