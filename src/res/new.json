@@ -1,25 +1,5 @@
-[
-    {
-      "fièvre": "fièvre",
-      "toux": "toux",
-      "maux_de_gorge": "maux de gorge",
-      "courbatures": "courbatures",
-      "diarrhee": "diarrhée",
-      "perte_odorat": "perte de l'odorat",
-      "perte_gout": "perte du goût",
-      "essoufflement": "essoufflement",
-      "difficultes_respiratoires": "difficultés respiratoires",
-      "douleurs_thoraciques": "douleurs thoraciques",
-      "cyanose": "cyanose",
-      "douleur": "douleur",
-      "maux_de_tete": "maux de tête",
-      "irritations": "irritations",
-      "rougeurs": "rougeurs",
-      "demengeaisons": "demengeaisons",
-      "lesions_superficielles": "lesions superficielles",
-      "gonflements": "gonflements"
-    },
-    [
+{
+    "diagnostics": [
       {
         "name": "grippe",
         "id": "grippe",
@@ -189,4 +169,4 @@
         ]
       }
     ]
-  ]
+  }
