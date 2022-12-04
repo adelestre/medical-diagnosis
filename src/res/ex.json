@@ -1,0 +1,26 @@
+{
+	"db": {
+		"symptomes": {
+			"fievre": {
+				"nom": "Fièvre",
+				"id": "fievre"
+			},
+			"toux": {
+				"nom": "Toux",
+				"id": "toux"
+			}
+		},
+		"diagnostics": {
+			"grippe": {
+				"nom": "Grippe",
+				"id": "grippe",
+				"symptomes": ["fievre", "toux"],
+				"protocol": [
+					"Donner un doliprane",
+					"Repos dans la salle de repos",
+					"Appeler la famille"
+				]
+			}
+		}
+	}
+}
