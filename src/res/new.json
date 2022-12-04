@@ -1,0 +1,192 @@
+[
+    {
+      "fièvre": "fièvre",
+      "toux": "toux",
+      "maux_de_gorge": "maux de gorge",
+      "courbatures": "courbatures",
+      "diarrhee": "diarrhée",
+      "perte_odorat": "perte de l'odorat",
+      "perte_gout": "perte du goût",
+      "essoufflement": "essoufflement",
+      "difficultes_respiratoires": "difficultés respiratoires",
+      "douleurs_thoraciques": "douleurs thoraciques",
+      "cyanose": "cyanose",
+      "douleur": "douleur",
+      "maux_de_tete": "maux de tête",
+      "irritations": "irritations",
+      "rougeurs": "rougeurs",
+      "demengeaisons": "demengeaisons",
+      "lesions_superficielles": "lesions superficielles",
+      "gonflements": "gonflements"
+    },
+    [
+      {
+        "name": "grippe",
+        "id": "grippe",
+        "protocol": [
+          "paracétamol",
+          "repos",
+          "appeler la famille"
+        ],
+        "symptoms": [
+          "fièvre",
+          "toux",
+          "maux de gorge",
+          "courbatures"
+        ]
+      },
+      {
+        "name": "rhume",
+        "id": "rhume",
+        "protocol": [
+          "repos"
+        ],
+        "symptoms": [
+          "toux",
+          "maux de gorge"
+        ]
+      },
+      {
+        "name": "COVID-19",
+        "id": "covid",
+        "protocol": [
+          "paracétamol",
+          "repos",
+          "appeler la famille",
+          "autotest covid-19"
+        ],
+        "symptoms": [
+          "fièvre",
+          "toux",
+          "maux de gorge",
+          "courbatures",
+          "diarrhée",
+          "perte de l'odorat",
+          "perte du goût",
+          "essoufflement",
+          "difficultés respiratoires",
+          "douleurs thoraciques",
+          "cyanose"
+        ]
+      },
+      {
+        "name": "otite",
+        "id": "otite",
+        "protocol": [
+          "paracétamol",
+          "repos",
+          "appeler la famille"
+        ],
+        "symptoms": [
+          "douleur",
+          "fièvre",
+          "maux de tête",
+          "maux de gorge",
+          "mal à l'oreille"
+        ]
+      },
+      {
+        "name": "angine",
+        "id": "angine",
+        "protocol": [
+          "paracétamol",
+          "repos",
+          "appeler la famille",
+          "sirop"
+        ],
+        "symptoms": [
+          "douleur",
+          "fièvre",
+          "maux de gorge"
+        ]
+      },
+      {
+        "name": "bronchite",
+        "id": "bronchite",
+        "protocol": [
+          "paracétamol",
+          "repos",
+          "appeler la famille",
+          "sirop"
+        ],
+        "symptoms": [
+          "toux",
+          "essoufflement",
+          "difficultés respiratoires",
+          "douleurs thoraciques",
+          "cyanose"
+        ]
+      },
+      {
+        "name": "allergie",
+        "id": "allergie",
+        "protocol": [
+          "creme",
+          "surveillance",
+          "repos"
+        ],
+        "symptoms": [
+          "fièvre",
+          "maux de tête",
+          "irritations",
+          "rougeurs",
+          "demengeaisons"
+        ]
+      },
+      {
+        "name": "egratinure",
+        "id": "egratinure",
+        "protocol": [
+          "desinfection",
+          "pansement"
+        ],
+        "symptoms": [
+          "douleur",
+          "rougeurs",
+          "lesions superficielles"
+        ]
+      },
+      {
+        "name": "coupure",
+        "id": "coupure",
+        "protocol": [
+          "desinfection",
+          "pansement"
+        ],
+        "symptoms": [
+          "douleur",
+          "lesions superficielles"
+        ]
+      },
+      {
+        "name": "dechirure",
+        "id": "dechirure",
+        "protocol": [
+          "immobilisation",
+          "bandage",
+          "creme",
+          "glace",
+          "repos",
+          "bequilles",
+          "appeler la famille"
+        ],
+        "symptoms": [
+          "douleur",
+          "gonflements",
+          "rougeurs"
+        ]
+      },
+      {
+        "name": "brulure",
+        "id": "brulure",
+        "protocol": [
+          "creme"
+        ],
+        "symptoms": [
+          "douleur",
+          "rougeurs",
+          "demeangeaisons"
+        ]
+      }
+    ]
+  ]
