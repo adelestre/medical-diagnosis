@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Form from './components/Form'
 
 function App() {
 	return (
@@ -6,6 +7,7 @@ function App() {
 			<div className="m-6 pb-8 capitalize text-3xl border-b-2">
 				système expert - aide au diagnostic médical - infirmerie
 			</div>
+			<Form />
 		</div>
 	)
 }
