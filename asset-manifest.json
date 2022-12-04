@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Systeme_Expert-Diagnostic_Infirmerie/static/css/main.fa02e492.css",
+    "main.js": "/Systeme_Expert-Diagnostic_Infirmerie/static/js/main.cb572f48.js",
+    "index.html": "/Systeme_Expert-Diagnostic_Infirmerie/index.html",
+    "main.fa02e492.css.map": "/Systeme_Expert-Diagnostic_Infirmerie/static/css/main.fa02e492.css.map",
+    "main.cb572f48.js.map": "/Systeme_Expert-Diagnostic_Infirmerie/static/js/main.cb572f48.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa02e492.css",
+    "static/js/main.cb572f48.js"
+  ]
+}
