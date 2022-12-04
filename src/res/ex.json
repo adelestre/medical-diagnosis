@@ -1,19 +1,19 @@
 {
-	"symptomes": [
+	"symptoms": [
 		{
-			"nom": "Fièvre",
+			"name": "Fièvre",
 			"id": "fievre"
 		},
 		{
-			"nom": "Toux",
+			"name": "Toux",
 			"id": "toux"
 		}
 	],
 	"diagnostics": [
 		{
-			"nom": "Grippe",
+			"name": "Grippe",
 			"id": "grippe",
-			"symptomes": ["fievre", "toux"],
+			"symptoms": ["fievre", "toux"],
 			"protocol": [
 				"Donner un doliprane",
 				"Repos dans la salle de repos",

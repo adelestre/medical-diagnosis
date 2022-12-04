@@ -2,6 +2,7 @@ import React from 'react'
 import db from '../res/ex.json'
 
 function Form() {
+	const [symptoms, setSymptoms] = React.useState(db.symptoms)
 	return (
 		<div className="w-1/3">
 			<form className="flex items-center">
@@ -32,8 +33,8 @@ function Form() {
 				</div>
 			</form>
 			<div>
-				{db.symptomes.map((item, index) => (
-					<div key={index}>{item}</div>
+				{symptoms.map((symptom, index) => (
+					<div key={'symptom' + index}>{symptom.nom}</div>
 				))}
 			</div>
 		</div>
