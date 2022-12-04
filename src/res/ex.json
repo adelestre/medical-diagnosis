@@ -1,24 +1,33 @@
 {
 	"symptoms": [
 		{
-			"name": "Fièvre",
+			"name": "fièvre",
 			"id": "fievre"
 		},
 		{
-			"name": "Toux",
+			"name": "toux",
 			"id": "toux"
+		},
+		{
+			"name": "maux de tête",
+			"id": "maux_de_tete"
 		}
 	],
 	"diagnostics": [
 		{
-			"name": "Grippe",
+			"name": "grippe",
 			"id": "grippe",
-			"symptoms": ["fievre", "toux"],
 			"protocol": [
 				"Donner un doliprane",
 				"Repos dans la salle de repos",
 				"Appeler la famille"
 			]
+		}
+	],
+	"rules": [
+		{
+			"name": "grippe",
+			"symptoms": ["fievre", "toux"]
 		}
 	]
 }

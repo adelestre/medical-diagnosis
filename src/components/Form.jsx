@@ -1,5 +1,6 @@
 import React from 'react'
 import db from '../res/ex.json'
+import Symptom from './Symptom'
 
 function Form() {
 	const [filteredSymptoms, setFilteredSymptoms] = React.useState(db.symptoms)
@@ -15,7 +16,7 @@ function Form() {
 		)
 	}
 	return (
-		<div className="md:w-1/3 w-3/4">
+		<div className="w-full" style={{ maxHeight: '66%' }}>
 			<form className="flex items-center">
 				<label className="sr-only">Search</label>
 				<div className="relative w-full">
@@ -37,16 +38,16 @@ function Form() {
 					<input
 						type="text"
 						id="voice-search"
-						className="bg-gray-50 border-2 rounded-md border-gray-300 text-gray-900 text-sm focus:border-blue-500 focus:outline-none block w-full pl-10 p-2.5"
+						className="bg-gray-100 border-2 rounded-md border-gray-300 text-gray-900 text-lg focus:border-blue-500 focus:outline-none block w-full pl-10 p-2.5"
 						placeholder="Chercher un symptôme..."
 						onChange={(e) => onInputChange(e)}
 						value={input}
 					/>
 				</div>
 			</form>
-			<ol className="w-full">
+			<ol className="mt-1 w-full max-h-full flex flex-col gap-1 overflow-y-auto">
 				{filteredSymptoms.map((symptom, index) => (
-					<li key={'symptom' + index}>{symptom.name}</li>
+					<Symptom key={'symptom' + index}>{symptom}</Symptom>
 				))}
 			</ol>
 		</div>
