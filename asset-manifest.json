@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Systeme_Expert-Diagnostic_Infirmerie/static/css/main.6ccb6e3f.css",
-    "main.js": "/Systeme_Expert-Diagnostic_Infirmerie/static/js/main.4095d98d.js",
+    "main.css": "/Systeme_Expert-Diagnostic_Infirmerie/static/css/main.27281a1b.css",
+    "main.js": "/Systeme_Expert-Diagnostic_Infirmerie/static/js/main.c7561655.js",
     "index.html": "/Systeme_Expert-Diagnostic_Infirmerie/index.html",
-    "main.6ccb6e3f.css.map": "/Systeme_Expert-Diagnostic_Infirmerie/static/css/main.6ccb6e3f.css.map",
-    "main.4095d98d.js.map": "/Systeme_Expert-Diagnostic_Infirmerie/static/js/main.4095d98d.js.map"
+    "main.27281a1b.css.map": "/Systeme_Expert-Diagnostic_Infirmerie/static/css/main.27281a1b.css.map",
+    "main.c7561655.js.map": "/Systeme_Expert-Diagnostic_Infirmerie/static/js/main.c7561655.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ccb6e3f.css",
-    "static/js/main.4095d98d.js"
+    "static/css/main.27281a1b.css",
+    "static/js/main.c7561655.js"
   ]
 }
