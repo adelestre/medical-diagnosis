@@ -13,9 +13,9 @@ function Symptom({ children, symptoms, addSymptom, removeSymptom }) {
 	return (
 		<li
 			className={
-				'w-full flex flex-row gap-2 rounded-md items-center p-2 border-2 hover:bg-blue-500 hover:border-blue-500 duration-200 cursor-pointer ' +
+				'w-full flex flex-row gap-2 rounded-md items-center p-2 border-2 md:hover:border-blue-500 duration-200 cursor-pointer ' +
 				(isChecked
-					? 'bg-blue-200 border-blue-300'
+					? 'bg-blue-200 border-blue-200'
 					: 'bg-slate-50 border-slate-300')
 			}
 			onClick={onClick}

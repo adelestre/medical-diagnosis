@@ -15,13 +15,13 @@ function App() {
 	}
 	const [symptoms, addSymptom, removeSymptom] = useList([])
 	return (
-		<div className="flex flex-col gap-6 h-screen w-3/4 max-w-5xl m-auto items-center md:justify-center pb-12">
+		<div className="relative flex flex-col gap-6 w-3/4 max-w-5xl mx-auto py-6 items-center">
 			<div className="pb-8 w-full capitalize text-3xl border-b-2">
 				système expert - aide au diagnostic médical - infirmerie
 			</div>
 			<div
-				className="flex flex-row gap-2 relative w-full"
-				style={{ maxHeight: '66%' }}
+				className="flex flex-col gap-2 relative w-full"
+				style={{ height: '70vh' }}
 			>
 				<Form
 					symptoms={symptoms}

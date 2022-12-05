@@ -16,8 +16,8 @@ function Form({ symptoms, addSymptom, removeSymptom }) {
 		)
 	}
 	return (
-		<div className="flex-1 h-full">
-			<form className="flex items-center">
+		<div className="relative p-6 pr-4 rounded-md h-full bg-gray-200">
+			<form className="relative flex items-center pr-2 mb-2">
 				<label className="sr-only">Search</label>
 				<div className="relative w-full">
 					<div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
@@ -45,7 +45,22 @@ function Form({ symptoms, addSymptom, removeSymptom }) {
 					/>
 				</div>
 			</form>
-			<ol className="mt-1 w-full max-h-full flex flex-col gap-1 overflow-y-auto">
+			<ol
+				className="relative w-full flex flex-col gap-1 pr-2 overflow-y-auto"
+				style={{
+					height: 'calc(100% - 52px)',
+				}}
+			>
+				{filteredSymptoms.map((symptom, index) => (
+					<Symptom
+						symptoms={symptoms}
+						addSymptom={addSymptom}
+						removeSymptom={removeSymptom}
+						key={'symptom' + index}
+					>
+						{symptom}
+					</Symptom>
+				))}
 				{filteredSymptoms.map((symptom, index) => (
 					<Symptom
 						symptoms={symptoms}
