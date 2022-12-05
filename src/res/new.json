@@ -119,10 +119,14 @@
       {
         "name": "dechirure",
         "id": "dechirure",
-        "symptoms": [
-          "douleur",
-          "gonflements",
-          "rougeurs"
+        "protocol": [
+          "immobilisation",
+          "bandage",
+          "creme",
+          "glace",
+          "repos",
+          "bequilles",
+          "appeler la famille"
         ],
         "categories" : [
           "terminal",
@@ -246,14 +250,10 @@
         ]
       },{
         "disease" : "dechirure",
-        "protocol": [
-          "immobilisation",
-          "bandage",
-          "creme",
-          "glace",
-          "repos",
-          "bequilles",
-          "appeler la famille"
+        "symptoms": [
+          "douleur",
+          "gonflements",
+          "rougeurs"
         ]
       },{
         "disease" : "brulure",
