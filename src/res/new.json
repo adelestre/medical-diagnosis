@@ -1,5 +1,5 @@
 {
-    "diagnostics": [
+    "faits": [
       {
         "name": "grippe",
         "id": "grippe",
@@ -12,7 +12,12 @@
           "fièvre",
           "toux",
           "maux de gorge",
-          "courbatures"
+          "courbatures",
+          "vomissements"
+        ],
+        "categories" : [
+          "intermediaire",
+          "virologique"
         ]
       },
       {
@@ -24,6 +29,10 @@
         "symptoms": [
           "toux",
           "maux de gorge"
+        ],
+        "categories" : [
+          "primaire",
+          "virologique"
         ]
       },
       {
@@ -46,7 +55,11 @@
           "essoufflement",
           "difficultés respiratoires",
           "douleurs thoraciques",
-          "cyanose"
+          "vomissements"
+        ],
+        "categories" : [
+          "terminal",
+          "virologique"
         ]
       },
       {
@@ -63,6 +76,10 @@
           "maux de tête",
           "maux de gorge",
           "mal à l'oreille"
+        ],
+        "categories" : [
+          "terminal",
+          "virologique"
         ]
       },
       {
@@ -78,6 +95,10 @@
           "douleur",
           "fièvre",
           "maux de gorge"
+        ],
+        "categories" : [
+          "intermediaire",
+          "virologique"
         ]
       },
       {
@@ -93,8 +114,11 @@
           "toux",
           "essoufflement",
           "difficultés respiratoires",
-          "douleurs thoraciques",
-          "cyanose"
+          "douleurs thoraciques"
+        ],
+        "categories" : [
+          "intermediaire",
+          "virologique"
         ]
       },
       {
@@ -111,6 +135,10 @@
           "irritations",
           "rougeurs",
           "demengeaisons"
+        ],
+        "categories" : [
+          "intermediaire",
+          "cutannee"
         ]
       },
       {
@@ -124,6 +152,10 @@
           "douleur",
           "rougeurs",
           "lesions superficielles"
+        ],
+        "categories" : [
+          "primaire",
+          "physique"
         ]
       },
       {
@@ -136,6 +168,10 @@
         "symptoms": [
           "douleur",
           "lesions superficielles"
+        ],
+        "categories" : [
+          "primaire",
+          "physique"
         ]
       },
       {
@@ -154,6 +190,10 @@
           "douleur",
           "gonflements",
           "rougeurs"
+        ],
+        "categories" : [
+          "terminal",
+          "physique"
         ]
       },
       {
@@ -166,7 +206,47 @@
           "douleur",
           "rougeurs",
           "demeangeaisons"
+        ],
+        "categories" : [
+          "primaire",
+          "physique"
         ]
-      }
+      },
+      {
+        "name" : "règles douloureuses",
+        "id" : "regles",
+        "protocol" : [
+          "paracétamol",
+          "repos"
+        ],
+        "symptoms": [
+          "maux de tête",
+          "maux de ventre",
+          "diarrhée",
+          "vomissements"
+        ],
+        "categories" : [
+          "terminal"       
+        ]
+      },{
+        "name" : "gastro-entherite",
+        "id" : "gastro",
+        "protocol" : [
+          "paracétamol",
+          "repos",
+          "appeler la famille"
+        ],
+        "symptoms" : [
+          "diarrhée",
+          "fièvre",
+          "maux de tête",
+          "maux de ventre",
+          "vomissements"
+        ],
+        "categories" : [
+          "intermediaire",
+          "virologique"
+        ]
+      } 
     ]
   }
