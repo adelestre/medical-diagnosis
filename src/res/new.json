@@ -8,13 +8,6 @@
           "repos",
           "appeler la famille"
         ],
-        "symptoms": [
-          "fièvre",
-          "toux",
-          "maux de gorge",
-          "courbatures",
-          "vomissements"
-        ],
         "categories" : [
           "intermediaire",
           "virologique"
@@ -25,10 +18,6 @@
         "id": "rhume",
         "protocol": [
           "repos"
-        ],
-        "symptoms": [
-          "toux",
-          "maux de gorge"
         ],
         "categories" : [
           "primaire",
@@ -44,19 +33,6 @@
           "appeler la famille",
           "autotest covid-19"
         ],
-        "symptoms": [
-          "fièvre",
-          "toux",
-          "maux de gorge",
-          "courbatures",
-          "diarrhée",
-          "perte de l'odorat",
-          "perte du goût",
-          "essoufflement",
-          "difficultés respiratoires",
-          "douleurs thoraciques",
-          "vomissements"
-        ],
         "categories" : [
           "terminal",
           "virologique"
@@ -69,13 +45,6 @@
           "paracétamol",
           "repos",
           "appeler la famille"
-        ],
-        "symptoms": [
-          "douleur",
-          "fièvre",
-          "maux de tête",
-          "maux de gorge",
-          "mal à l'oreille"
         ],
         "categories" : [
           "terminal",
@@ -91,11 +60,6 @@
           "appeler la famille",
           "sirop"
         ],
-        "symptoms": [
-          "douleur",
-          "fièvre",
-          "maux de gorge"
-        ],
         "categories" : [
           "intermediaire",
           "virologique"
@@ -110,12 +74,6 @@
           "appeler la famille",
           "sirop"
         ],
-        "symptoms": [
-          "toux",
-          "essoufflement",
-          "difficultés respiratoires",
-          "douleurs thoraciques"
-        ],
         "categories" : [
           "intermediaire",
           "virologique"
@@ -129,13 +87,6 @@
           "surveillance",
           "repos"
         ],
-        "symptoms": [
-          "fièvre",
-          "maux de tête",
-          "irritations",
-          "rougeurs",
-          "demengeaisons"
-        ],
         "categories" : [
           "intermediaire",
           "cutannee"
@@ -147,11 +98,6 @@
         "protocol": [
           "desinfection",
           "pansement"
-        ],
-        "symptoms": [
-          "douleur",
-          "rougeurs",
-          "lesions superficielles"
         ],
         "categories" : [
           "primaire",
@@ -165,10 +111,6 @@
           "desinfection",
           "pansement"
         ],
-        "symptoms": [
-          "douleur",
-          "lesions superficielles"
-        ],
         "categories" : [
           "primaire",
           "physique"
@@ -177,15 +119,6 @@
       {
         "name": "dechirure",
         "id": "dechirure",
-        "protocol": [
-          "immobilisation",
-          "bandage",
-          "creme",
-          "glace",
-          "repos",
-          "bequilles",
-          "appeler la famille"
-        ],
         "symptoms": [
           "douleur",
           "gonflements",
@@ -202,11 +135,6 @@
         "protocol": [
           "creme"
         ],
-        "symptoms": [
-          "douleur",
-          "rougeurs",
-          "demeangeaisons"
-        ],
         "categories" : [
           "primaire",
           "physique"
@@ -219,12 +147,6 @@
           "paracétamol",
           "repos"
         ],
-        "symptoms": [
-          "maux de tête",
-          "maux de ventre",
-          "diarrhée",
-          "vomissements"
-        ],
         "categories" : [
           "terminal"       
         ]
@@ -236,17 +158,129 @@
           "repos",
           "appeler la famille"
         ],
+        "categories" : [
+          "intermediaire",
+          "virologique"
+        ]
+      } 
+    ],
+
+    "regles" : [
+      {
+        "disease" : "grippe",
+        "symptoms": [
+          "fièvre",
+          "toux",
+          "maux de gorge",
+          "courbatures",
+          "vomissements"
+        ]
+      },{
+        "disease" : "rhume",
+        "symptoms": [
+          "toux",
+          "maux de gorge"
+        ]
+      },{
+        "disease": "covid",
+        "symptoms": [
+          "fièvre",
+          "toux",
+          "maux de gorge",
+          "courbatures",
+          "diarrhée",
+          "perte de l'odorat",
+          "perte du goût",
+          "essoufflement",
+          "difficultés respiratoires",
+          "douleurs thoraciques",
+          "vomissements"
+        ]
+      },{
+        "disease":"otite",
+        "symptoms": [
+          "douleur",
+          "fièvre",
+          "maux de tête",
+          "maux de gorge",
+          "mal à l'oreille"
+        ]
+      },{
+        "disease" : "angine",
+        "symptoms": [
+          "douleur",
+          "fièvre",
+          "maux de gorge"
+        ]
+      },{
+
+        "disease" : "bronchite",
+        "symptoms": [
+          "toux",
+          "essoufflement",
+          "difficultés respiratoires",
+          "douleurs thoraciques"
+        ]
+      },{
+        
+        "disease" : "allergie",
+        "symptoms": [
+          "fièvre",
+          "maux de tête",
+          "irritations",
+          "rougeurs",
+          "demengeaisons"
+        ]
+      },{
+        "disease" : "egratinure",
+        "symptoms": [
+          "douleur",
+          "rougeurs",
+          "lesions superficielles"
+        ]
+      },{
+        "disease" : "coupure",
+        "symptoms": [
+          "douleur",
+          "lesions superficielles"
+        ]
+      },{
+        "disease" : "dechirure",
+        "protocol": [
+          "immobilisation",
+          "bandage",
+          "creme",
+          "glace",
+          "repos",
+          "bequilles",
+          "appeler la famille"
+        ]
+      },{
+        "disease" : "brulure",
+        "symptoms": [
+          "douleur",
+          "rougeurs",
+          "demeangeaisons"
+        ]
+      },{
+        "disease" : "regles",
+        "symptoms": [
+          "maux de tête",
+          "maux de ventre",
+          "diarrhée",
+          "vomissements"
+        ]
+      },{
+        "disease" : "gastro",
         "symptoms" : [
           "diarrhée",
           "fièvre",
           "maux de tête",
           "maux de ventre",
           "vomissements"
-        ],
-        "categories" : [
-          "intermediaire",
-          "virologique"
         ]
-      } 
+      }
     ]
+
+    
   }
