@@ -3,20 +3,14 @@
     {
       "name": "grippe",
       "id": "grippe",
-      "protocol": [
-        "paracétamol",
-        "repos",
-        "appeler la famille"
-      ],
+      "protocol": ["paracétamol", "repos", "appeler la famille"],
       "categorie": "intermediaire",
       "nature": "virologique"
     },
     {
       "name": "rhume",
       "id": "rhume",
-      "protocol": [
-        "repos"
-      ],
+      "protocol": ["repos"],
       "categorie": "intermediaire",
       "nature": "virologique"
     },
@@ -35,67 +29,42 @@
     {
       "name": "otite",
       "id": "otite",
-      "protocol": [
-        "paracétamol",
-        "repos",
-        "appeler la famille"
-      ],
+      "protocol": ["paracétamol", "repos", "appeler la famille"],
       "categorie": "terminal",
       "nature": "virologique"
     },
     {
       "name": "angine",
       "id": "angine",
-      "protocol": [
-        "paracétamol",
-        "repos",
-        "appeler la famille",
-        "sirop"
-      ],
+      "protocol": ["paracétamol", "repos", "appeler la famille", "sirop"],
       "categorie": "intermediaire",
       "nature": "virologique"
     },
     {
       "name": "bronchite",
       "id": "bronchite",
-      "protocol": [
-        "paracétamol",
-        "repos",
-        "appeler la famille",
-        "sirop"
-      ],
+      "protocol": ["paracétamol", "repos", "appeler la famille", "sirop"],
       "categorie": "intermediaire",
       "nature": "virologique"
     },
     {
       "name": "allergie",
       "id": "allergie",
-      "protocol": [
-        "creme",
-        "surveillance",
-        "repos"
-      ],
+      "protocol": ["creme", "surveillance", "repos"],
       "categorie": "intermediaire",
       "nature": "cutannee"
     },
     {
       "name": "règles douloureuses",
       "id": "regles",
-      "protocol": [
-        "paracétamol",
-        "repos"
-      ],
+      "protocol": ["paracétamol", "repos"],
       "categorie": "terminal",
       "nature": "non defini"
     },
     {
       "name": "gastro-entherite",
       "id": "gastro",
-      "protocol": [
-        "paracétamol",
-        "repos",
-        "appeler la famille"
-      ],
+      "protocol": ["paracétamol", "repos", "appeler la famille"],
       "categorie": "intermediaire",
       "nature": "virologique"
     },
@@ -187,7 +156,7 @@
   ],
   "regles": [
     {
-      "consequences": "grippe",
+      "consequence": "grippe",
       "hypotesis": [
         "rhume",
         "angine",
@@ -200,7 +169,7 @@
       ]
     },
     {
-      "consequences": "covid",
+      "consequence": "covid",
       "hypotesis": [
         "grippe",
         "bronchite",
@@ -212,29 +181,19 @@
       ]
     },
     {
-      "consequences": "rhume",
-      "hypotesis": [
-        "toux",
-        "maux_de_gorge"
-      ]
+      "consequence": "rhume",
+      "hypotesis": ["toux", "maux_de_gorge"]
     },
     {
-      "consequences": "otite",
-      "hypotesis": [
-        "rhume",
-        "mal_oreille",
-        "fievre"
-      ]
+      "consequence": "otite",
+      "hypotesis": ["angine", "mal_oreille"]
     },
     {
-      "consequences": "angine",
-      "hypotesis": [
-        "rhume",
-        "fievre"
-      ]
+      "consequence": "angine",
+      "hypotesis": ["rhume", "fievre"]
     },
     {
-      "consequences": "bronchite",
+      "consequence": "bronchite",
       "hypotesis": [
         "angine",
         "essouflement",
@@ -243,22 +202,15 @@
       ]
     },
     {
-      "consequences": "allergie",
-      "hypotesis": [
-        "irritations",
-        "rougeurs",
-        "demengeaisons"
-      ]
+      "consequence": "allergie",
+      "hypotesis": ["irritations", "rougeurs", "demengeaisons"]
     },
     {
-      "consequences": "regles",
-      "hypotesis": [
-        "maux_de_tete",
-        "maux_de_ventre"
-      ]
+      "consequence": "regles",
+      "hypotesis": ["maux_de_tete", "maux_de_ventre"]
     },
     {
-      "consequences": "gastro",
+      "consequence": "gastro",
       "hypotesis": [
         "rhume",
         "maux_de_ventre",
