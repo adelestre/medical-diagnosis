@@ -18,4 +18,26 @@ const getCategories = () => {
   return categories
 }
 
-export { getFact, getCategories }
+const getRuleFromConsquence = (consequence) => {
+  let rule = null
+  db.regles.forEach((regle) => {
+    if (regle.consequence === consequence) {
+      rule = regle
+    }
+  })
+  return rule
+}
+
+const getSymptomFromCategory = (category) => {
+  let symptoms = []
+  db.faits.forEach((fait) => {
+    if (fait.categorie) {
+      if (fait.categorie.includes(category)) {
+        symptoms.push(fait)
+      }
+    }
+  })
+  return symptoms
+}
+
+export { getFact, getCategories, getSymptomFromCategory, getRuleFromConsquence }
