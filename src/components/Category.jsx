@@ -15,9 +15,9 @@ function Category({ category, addFilter, removeFilter }) {
 		setIsChecked(!isChecked)
 	}
 	return (
-		<div className="flex flex-row gap-2 cursor-pointer" onClick={onClickHandle}>
+		<div className="flex flex-row gap-2" onClick={onClickHandle}>
 			<input
-				className="form-check-input appearance-none h-6 w-6 border pointer-events-none border-slate-300 rounded bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 align-top bg-no-repeat bg-center bg-contain float-left"
+				className="form-check-input appearance-none h-6 w-6 border border-slate-300 rounded bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 align-top bg-no-repeat bg-center bg-contain float-left cursor-pointer"
 				type="checkbox"
 				checked={isChecked}
 				onChange={() => {}}
