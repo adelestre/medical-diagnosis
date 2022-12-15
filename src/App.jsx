@@ -23,8 +23,8 @@ function App() {
 					className="bg-slate-100 p-4 rounded-md border-2"
 				>
 					{model
-						? "Aller vers : Établissement d'un diagnostic"
-						: "Aller vers : Vérification d'un diagnostic"}
+						? "Aller vers : Vérification d'un diagnostic"
+						: "Aller vers : Établissement d'un diagnostic"}
 				</button>
 			</div>
 			<div className="flex flex-col gap-2 relative w-full">
