@@ -1,0 +1,240 @@
+{
+	"faits": [
+		{
+			"name": "grippe",
+			"id": "grippe",
+			"protocol": ["paracétamol", "repos", "appeler la famille"],
+			"categorie": "intermediaire",
+			"nature": "virologique"
+		},
+		{
+			"name": "rhume",
+			"id": "rhume",
+			"protocol": ["repos"],
+			"categorie": "intermediaire",
+			"nature": "virologique"
+		},
+		{
+			"name": "COVID-19",
+			"id": "covid",
+			"protocol": [
+				"paracétamol",
+				"repos",
+				"appeler la famille",
+				"autotest covid-19"
+			],
+			"categorie": "terminal",
+			"nature": "virologique"
+		},
+		{
+			"name": "otite",
+			"id": "otite",
+			"protocol": ["paracétamol", "repos", "appeler la famille"],
+			"categorie": "terminal",
+			"nature": "virologique"
+		},
+		{
+			"name": "angine",
+			"id": "angine",
+			"protocol": ["paracétamol", "repos", "appeler la famille", "sirop"],
+			"categorie": "intermediaire",
+			"nature": "virologique"
+		},
+		{
+			"name": "bronchite",
+			"id": "bronchite",
+			"protocol": ["paracétamol", "repos", "appeler la famille", "sirop"],
+			"categorie": "intermediaire",
+			"nature": "virologique"
+		},
+		{
+			"name": "allergie",
+			"id": "allergie",
+			"protocol": ["creme", "surveillance", "repos"],
+			"categorie": "intermediaire",
+			"nature": "cutannee"
+		},
+		{
+			"name": "règles douloureuses",
+			"id": "regles",
+			"protocol": ["paracétamol", "repos"],
+			"categorie": "terminal",
+			"nature": "autre"
+		},
+		{
+			"name": "gastro-entherite",
+			"id": "gastro",
+			"protocol": ["paracétamol", "repos", "appeler la famille"],
+			"categorie": "intermediaire",
+			"nature": "virologique"
+		},
+		{
+			"name": "fièvre",
+			"id": "fievre",
+			"categorie": "primaire",
+			"nature": "autre"
+		},
+		{
+			"name": "toux",
+			"id": "toux",
+			"categorie": "primaire",
+			"nature": "autre"
+		},
+		{
+			"name": "maux de gorge",
+			"id": "maux_de_gorge",
+			"categorie": "primaire",
+			"nature": "autre"
+		},
+		{
+			"name": "courbatures",
+			"id": "courbatures",
+			"categorie": "primaire",
+			"nature": "autre"
+		},
+		{
+			"name": "vommissements",
+			"id": "vommissements",
+			"categorie": "primaire",
+			"nature": "autre"
+		},
+		{
+			"name": "diahrée",
+			"id": "diahree",
+			"categorie": "primaire",
+			"nature": "autre"
+		},
+		{
+			"name": "perte de l'odorat",
+			"id": "perte_odorat",
+			"categorie": "primaire",
+			"nature": "autre"
+		},
+		{
+			"name": "perte du goût",
+			"id": "perte_gout",
+			"categorie": "primaire",
+			"nature": "autre"
+		},
+		{
+			"name": "essouflement",
+			"id": "essouflement",
+			"categorie": "primaire",
+			"nature": "autre"
+		},
+		{
+			"name": "difficultés respiratoires",
+			"id": "difficultes_respiratoires",
+			"categorie": "primaire",
+			"nature": "autre"
+		},
+		{
+			"name": "douleurs thoraciques",
+			"id": "douleurs_thoraciques",
+			"categorie": "primaire",
+			"nature": "autre"
+		},
+		{
+			"name": "maux de tête",
+			"id": "maux_de_tete",
+			"categorie": "primaire",
+			"nature": "autre"
+		},
+		{
+			"name": "mal à l'oreille",
+			"id": "mal_oreille",
+			"categorie": "primaire",
+			"nature": "autre"
+		},
+		{
+			"name": "maux de ventre",
+			"id": "maux_de_ventre",
+			"categorie": "primaire",
+			"nature": "autre"
+		},
+		{
+			"name": "irritations",
+			"id": "irritations",
+			"categorie": "primaire",
+			"nature": "autre"
+		},
+		{
+			"name": "rougeurs",
+			"id": "rougeurs",
+			"categorie": "primaire",
+			"nature": "autre"
+		},
+		{
+			"name": "demengeaisons",
+			"id": "demengeaisons",
+			"categorie": "primaire",
+			"nature": "autre"
+		}
+	],
+	"regles": [
+		{
+			"consequence": "grippe",
+			"hypotesis": [
+				"rhume",
+				"angine",
+				"gastro",
+				"fievre",
+				"courbatures",
+				"vommissements",
+				"diahree",
+				"maux_de_tete"
+			]
+		},
+		{
+			"consequence": "covid",
+			"hypotesis": [
+				"grippe",
+				"bronchite",
+				"perte_odorat",
+				"perte_gout",
+				"essouflement",
+				"difficultes_respiratoires",
+				"douleurs_thoraciques"
+			]
+		},
+		{
+			"consequence": "rhume",
+			"hypotesis": ["toux", "maux_de_gorge"]
+		},
+		{
+			"consequence": "otite",
+			"hypotesis": ["angine", "mal_oreille"]
+		},
+		{
+			"consequence": "angine",
+			"hypotesis": ["rhume", "fievre"]
+		},
+		{
+			"consequence": "bronchite",
+			"hypotesis": [
+				"angine",
+				"essouflement",
+				"difficultes_respiratoires",
+				"douleurs_thoraciques"
+			]
+		},
+		{
+			"consequence": "allergie",
+			"hypotesis": ["irritations", "rougeurs", "demengeaisons"]
+		},
+		{
+			"consequence": "regles",
+			"hypotesis": ["maux_de_tete", "maux_de_ventre"]
+		},
+		{
+			"consequence": "gastro",
+			"hypotesis": [
+				"rhume",
+				"maux_de_ventre",
+				"maux_de_tete",
+				"fievre",
+				"diahree"
+			]
+		}
+	]
+}
