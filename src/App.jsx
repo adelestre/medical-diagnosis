@@ -30,15 +30,17 @@ function App() {
 			<div className="flex flex-col gap-2 relative w-full">
 				{model ? (
 					<>
-						<Form
-							symptoms={symptoms1}
-							addSymptom={addSymptom1}
-							removeSymptom={removeSymptom1}
-						/>
+						<div className="relative p-6 pr-4 pt-2 rounded-md bg-gray-200">
+							<Form
+								symptoms={symptoms1}
+								addSymptom={addSymptom1}
+								removeSymptom={removeSymptom1}
+							/>
+						</div>
 						<Results symptoms={symptoms1} />
 					</>
 				) : (
-					<>
+					<div className="relative p-6 pr-4 pt-2 rounded-md bg-gray-200">
 						<SelectDisease
 							selectedDisease={selectedDisease}
 							setSelectedDisease={setSelectedDisease}
@@ -49,7 +51,7 @@ function App() {
 							removeSymptom={removeSymptom2}
 						/>
 						<Result symptoms={symptoms2} selectedDisease={selectedDisease} />
-					</>
+					</div>
 				)}
 			</div>
 		</div>

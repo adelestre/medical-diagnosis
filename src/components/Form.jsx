@@ -26,7 +26,7 @@ function Form({ symptoms, addSymptom, removeSymptom }) {
 		setFilterOpen(!filterOpen)
 	}
 	return (
-		<div className="relative p-6 pr-4 pt-2 rounded-md bg-gray-200">
+		<div className="">
 			<form className="relative flex flex-col pr-2 mb-2">
 				<div
 					className="flex flex-row w-min items-center cursor-pointer select-none"
