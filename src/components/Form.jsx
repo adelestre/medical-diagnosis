@@ -16,7 +16,6 @@ function Form({ symptoms, addSymptom, removeSymptom }) {
 		}
 	}
 	const [filters, addFilter, removeFilter] = useArray([])
-	console.log(filters)
 	const [filterOpen, setFilterOpen] = useState(false)
 	const [input, setInput] = useState('')
 	const onInputChange = (e) => {
