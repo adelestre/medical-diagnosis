@@ -40,18 +40,20 @@ function App() {
 						<Results symptoms={symptoms1} />
 					</>
 				) : (
-					<div className="relative p-6 pr-4 pt-2 rounded-md bg-gray-200">
-						<SelectDisease
-							selectedDisease={selectedDisease}
-							setSelectedDisease={setSelectedDisease}
-						/>
-						<Form
-							symptoms={symptoms2}
-							addSymptom={addSymptom2}
-							removeSymptom={removeSymptom2}
-						/>
+					<>
+						<div className="relative p-6 pr-4 pt-2 rounded-md bg-gray-200">
+							<SelectDisease
+								selectedDisease={selectedDisease}
+								setSelectedDisease={setSelectedDisease}
+							/>
+							<Form
+								symptoms={symptoms2}
+								addSymptom={addSymptom2}
+								removeSymptom={removeSymptom2}
+							/>
+						</div>
 						<Result symptoms={symptoms2} selectedDisease={selectedDisease} />
-					</div>
+					</>
 				)}
 			</div>
 		</div>
