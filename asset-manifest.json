@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/medical-diagnostic/static/css/main.b9139701.css",
-    "main.js": "/medical-diagnostic/static/js/main.af8a1770.js",
-    "index.html": "/medical-diagnostic/index.html",
-    "main.b9139701.css.map": "/medical-diagnostic/static/css/main.b9139701.css.map",
-    "main.af8a1770.js.map": "/medical-diagnostic/static/js/main.af8a1770.js.map"
+    "main.css": "/medical-diagnosis/static/css/main.f3266660.css",
+    "main.js": "/medical-diagnosis/static/js/main.d5a152aa.js",
+    "index.html": "/medical-diagnosis/index.html",
+    "main.f3266660.css.map": "/medical-diagnosis/static/css/main.f3266660.css.map",
+    "main.d5a152aa.js.map": "/medical-diagnosis/static/js/main.d5a152aa.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9139701.css",
-    "static/js/main.af8a1770.js"
+    "static/css/main.f3266660.css",
+    "static/js/main.d5a152aa.js"
   ]
 }
