@@ -39,7 +39,7 @@ function Results({ symptoms }) {
   let results = getResults()
   return (
     <div className="flex flex-col gap-2 bg-slate-100 py-2 px-6 border-2 rounded-md border-gray-300">
-      <div className="text-lg">Diagnostic(s) :</div>
+      <div className="text-lg">Diagnostic :</div>
       <div>
         <ul className="flex flex-col gap-4 px-6 text-xl list-disc">
           {results &&
